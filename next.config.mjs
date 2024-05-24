@@ -6,6 +6,18 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "localhost",
+      },
+      {
+        protocol: "https",
+        hostname: "digitalhippo-production.up.railway.app",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
